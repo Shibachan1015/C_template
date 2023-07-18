@@ -1,17 +1,19 @@
-CC = clang
+CC = gcc
 CFLAGS=-std=c11 -g -static -Wall -v
 
 # link THIS for the cs50 functions (add others as needed):
-LFLAGS=-lcs50
+LFLAGS=cs50.c
+
 
 # the build target executable:
-TARGET = $(EXE)
+TARGET = hello
 
 all: $(TARGET)
 
-$(TARGET): $(TARGET).c ; $(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c $(LFLAGS)
+$(TARGET): $(TARGET).c
+	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c $(LFLAGS)
 
 clean:
-	rm -f $(TARGET) *.o *~
+	rm -f $(TARGET) $(TARGET:=.o) *~
 
 .PHONY: all clean
