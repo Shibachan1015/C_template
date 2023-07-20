@@ -4,7 +4,7 @@ CFLAGS=-std=c11 -g -Wall
 # link THIS for the cs50 functions (add others as needed):
 #LFLAGS=cs50.c
 # the build target executable:
-TARGET = 1-2
+TARGET = 1-5
 
 all: $(TARGET)
 
