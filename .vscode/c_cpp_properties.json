@@ -14,6 +14,22 @@
             "cppStandard": "gnu++11",
             "intelliSenseMode": "macos-gcc-x64",
             "configurationProvider": "ms-vscode.makefile-tools"
+        },
+        
+        {
+            "name": "Linux-Ubuntu",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/usr/lib/gcc/x86_64-linux-gnu/11/include"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "intelliSenseMode": "linux-gcc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
         }
     ],
     "version": 4
