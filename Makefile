@@ -5,7 +5,7 @@ CFLAGS=-std=c11 -g -static -Wall
 #LFLAGS=cs50.c
 LFLAGS=-lm
 # the build target executable:
-TARGET = atcoder-tessoku/a04
+TARGET = atcoder-tessoku/a05
 
 all: $(TARGET)
 
