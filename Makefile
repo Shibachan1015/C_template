@@ -14,6 +14,6 @@ $(TARGET): $(TARGET).c ;
 #$(LFLAGS)
 
 clean:
-	rm -f $(TARGET) *.o *~
+	rm -f $(TARGET) $(TARGET:=.o) *~
 
 .PHONY: all clean
